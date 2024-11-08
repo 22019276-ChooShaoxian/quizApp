@@ -28,10 +28,10 @@ const checkAnswer = () => {
         }
     }
     if (score<17) {
-        Alert.alert("You failed! Score:" + score + "/3")
+        Alert.alert("You failed! Score:" + score + "/17")
     }
     else{
-        Alert.alert("Amazing, you're a tank nerd! Score:" + score + "/3")
+        Alert.alert("Amazing, you're a tank nerd! Score:" + score + "/17")
     }
 }
 
@@ -157,9 +157,9 @@ class questionList extends  React.Component {
                       question = {"Which country is this tank from?"}
                       answers= {[
                           { label: 'M60 from Turkey', value: '0' },
-                          { label: 'M60 from Ukraine', value: '0' },
+                          { label: 'M60 from Ukraine', value: '1' },
                           { label: 'M60 from America', value: '0' },
-                          { label: 'M60 from Australia', value: '1' }
+                          { label: 'M60 from Australia', value: '0' }
                       ]}
                       index={11}
                 />
